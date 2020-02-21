@@ -19,7 +19,7 @@ git clone git@github.com:pradeepr-roboticist/code_base.git
 
 ./docker/prep_host.sh
 
-Once this is done, you will have a "ros_ws" directory in the code_base folder. This is your typical "catkin_ws" but this is used specifically by the docker containers you may run.
+Once this is done, you will have a "ros_ws" directory in the code_base folder. This is your typical "catkin_ws" but this is used specifically by the docker containers you may run. (See File Organization in diagram below)
 
 ## Daily usage
 Please refer to diagram at the end of the page for a visual summary.
