@@ -22,9 +22,12 @@ git clone git@github.com:pradeepr-roboticist/code_base.git
 Once this is done, you will have a "ros_ws" directory in the code_base folder. This is your typical "catkin_ws" but this is used specifically by the docker containers you may run.
 
 ## Daily usage
+The following image summarizes the following procedures.
+![SummaryDiagram](docker/diagram.png?raw=true "Diagram")
+
 Working with ROS involves working on multiple terminals at the same time. One of the terminals is a terminal running "roscore". Let's start that up right now.
 
-### Setting up the "roscore" terminal
+### Setting up the main terminal ("roscore" terminal)
 1. Open up a terminal in code_base. Run the following commands:
 
 ./docker/launch.sh
@@ -35,7 +38,7 @@ source rossrc
 
 ./workspace/docker/init_ros.sh
 
-### Setting up the other terminals
+### Setting up the other auxiliary terminals
 Other terminals that you may open need to talk to the "roscore" terminal. So, you need to "join" the "roscore" terminal by running the following commands.
 
 1. Open up a terminal in code_base. Run the following commands:
