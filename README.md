@@ -22,8 +22,7 @@ git clone git@github.com:pradeepr-roboticist/code_base.git
 Once this is done, you will have a "ros_ws" directory in the code_base folder. This is your typical "catkin_ws" but this is used specifically by the docker containers you may run.
 
 ## Daily usage
-The following image summarizes the following procedures.
-![SummaryDiagram](docker/diagram.png?raw=true "Diagram")
+Please refer to diagram at the end of the page for a visual summary.
 
 Working with ROS involves working on multiple terminals at the same time. One of the terminals is a terminal running "roscore". Let's start that up right now.
 
@@ -57,5 +56,6 @@ e.g. To compile your workspace, run:
 
 cd /workspace/ros_ws && catkin_build
 
-### Comments
-1. The folders "ros_ws" and "external_deps" are gitignored. You will need to save all your work in "ros_ws/src" before killing the "roscore" terminal.
+### Summary
+![SummaryDiagram](docker/diagram.png?raw=true "Diagram")
+
