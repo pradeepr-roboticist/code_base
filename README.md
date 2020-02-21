@@ -8,7 +8,7 @@ Here are some advantages.
 4) Allows for sharing a complex ROS setup between teams without being worried about lacking dependencies.
 
 ## Installing docker and nvidia-docker (version 2)
-1. Install nvidia-docker 2.0 by follow instructions the appropriate instructions at https://github.com/NVIDIA/nvidia-docker/wiki/Installation-(version-2.0)#prerequisites
+1. Install nvidia-docker 2.0 by following instructions at https://github.com/NVIDIA/nvidia-docker/wiki/Installation-(version-2.0)#prerequisites
 
 2. Test your docker installation by running the following command:
 
