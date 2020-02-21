@@ -1,4 +1,10 @@
 # code_base
+## What is this?
+This repo serves as a convenience template for working with ROS and Docker.
+Here are some features.
+1) Through the use of a docker image, we are able to avoid a host of problems associated with installing/maintaining a ROS distro. (e.g., The infamous error message "you have held broken packages")
+2) Clean seperation of the "catkin_workspace" from a complex ROS setup. This allows for keeping our custom ROS packages in seperate git repositories. We can clone our repositories and compile against any complex ROS setup easily while avoiding all sorts of integration problems like version issues, dependency issues.
+3) Allows for GUI applications to run while talking to a roscore backend in a docker container.
 
 ## Installing docker and nvidia-docker (version 2)
 1. Install nvidia-docker 2.0 by follow instructions the appropriate instructions at https://github.com/NVIDIA/nvidia-docker/wiki/Installation-(version-2.0)#prerequisites
