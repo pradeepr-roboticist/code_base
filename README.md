@@ -1,6 +1,6 @@
 # code_base
 ## What is this?
-This repo serves as a convenience template for working with ROS and Docker.
+This repo serves as a convenient template for working with ROS and Docker.
 Here are some features.
 1) Through the use of a docker image, we are able to avoid a host of problems associated with installing/maintaining a ROS distro. (e.g., The infamous error message "you have held broken packages")
 2) Clean seperation of the "catkin_workspace" from a complex ROS setup. This allows for keeping our custom ROS packages in seperate git repositories. We can clone our repositories and compile against any complex ROS setup easily while avoiding all sorts of integration problems like version issues, dependency issues.
