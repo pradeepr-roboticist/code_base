@@ -32,16 +32,16 @@ scons \
  && sudo rm -rf /var/lib/apt/lists/*
 
 ############### install vscode #########################
-RUN sudo apt-get update && sudo apt-get install -y software-properties-common apt-transport-https wget && sudo rm -rf /var/lib/apt/lists/*
-RUN wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-RUN sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-RUN sudo apt-get update && sudo apt-get install -y code
+#RUN sudo apt-get update && sudo apt-get install -y software-properties-common apt-transport-https wget && sudo rm -rf /var/lib/apt/lists/*
+#RUN wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+#RUN sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+#RUN sudo apt-get update && sudo apt-get install -y code
 
-RUN code --install-extension ms-vscode.cpptools && \
-code --install-extension ms-iot.vscode-ros && \
-code --install-extension ms-python.python && \
-code --install-extension ms-vscode.cmake-tools && \
-code --install-extension twxs.cmake
+#RUN code --install-extension ms-vscode.cpptools && \
+#code --install-extension ms-iot.vscode-ros && \
+#code --install-extension ms-python.python && \
+#code --install-extension ms-vscode.cmake-tools && \
+#code --install-extension twxs.cmake
 #######################################################
 
 RUN sudo apt-get update && sudo apt-get install -y \
