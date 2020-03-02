@@ -18,7 +18,7 @@ then
     print_out_red "$EXTERNAL_DEPS_PATH exists. Doing nothing."
 else
     print_out_green "Making $EXTERNAL_DEPS_PATH and cloning packages ..."
-    mkdir -p $EXTERNAL_DEPS_PATH
+    sudo mkdir -p $EXTERNAL_DEPS_PATH
     # Setup mongo driver (see https://moveit.ros.org/install/source/dependencies/)
     cd $EXTERNAL_DEPS_PATH && git clone -b 26compat https://github.com/mongodb/mongo-cxx-driver.git
     print_out_green "Setting up mongo-cxx-driver ..."
@@ -31,7 +31,7 @@ then
     print_out_red "$ROS_WS_PATH exists. Doing nothing."
 else
     print_out_green "Making $ROS_WS_PATH and downloading packages ..."
-    mkdir -p $ROS_WS_PATH/src/ && cd $ROS_WS_PATH/src/ && catkin_init_workspace
+    sudo mkdir -p $ROS_WS_PATH/src/ && cd $ROS_WS_PATH/src/ && catkin_init_workspace
     sudo rosdep init
     rosdep update
 
