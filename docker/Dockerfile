@@ -71,6 +71,10 @@ ros-melodic-teb-local-planner \
 # This is needed to prevent the use of default version of OMPL shipped with moveit
 RUN sudo apt-get remove -y ros-melodic-ompl
 
+RUN sudo apt-get update && sudo apt-get install -y \
+ca-certificates \
+&& sudo rm -rf /var/lib/apt/lists/*
+
 ## Add further dependencies over here. e.g. package_1 and package_2 are going to be installed below
 #RUN sudo apt-get update && sudo apt-get install -y \
 # package_1 \
