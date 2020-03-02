@@ -13,7 +13,7 @@ print_out_green()
     echo -e "${GREEN}$1${NC}"
 }
 
-if [ -d $EXTERNAL_DEPS_PATH]
+if [ -d $EXTERNAL_DEPS_PATH ]
 then
     print_out_red "$EXTERNAL_DEPS_PATH exists. Doing nothing."
 else
