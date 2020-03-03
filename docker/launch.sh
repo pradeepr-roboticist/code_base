@@ -1,7 +1,7 @@
 #!/bin/bash
 
 xhost +local:root
-nvidia-docker run -it \
+docker run -it \
     --name="ros_container" \
     --rm \
     --env="DISPLAY=$DISPLAY" \
